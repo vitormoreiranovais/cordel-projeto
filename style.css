@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;  /*VIEW PORTER ALTURA MÍNIMA*/
+    background-color: lightgray;
+    font-family: var(--fonte-extra);
+}
+
+:root {
+    --fonte-extra: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-padrao: "Sriracha", cursive;
+    --fonte-titulo: "Passion One", sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2.5vw; /*LARGURA DA VIEWPORTER PARA ALTERAR O TAMANHO DA FONTE (NÃO IDEAL, O MELHOR OPÇÃO SERIA O USO DA "MEDIA QUERIE")*/
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 4em;
+    padding-top: 50px;
+    font-variant: small-caps; /*TODAS AS LETRAS SÃO MINÚSCULAS, EXCETO AS INICIAIS*/
+}
+
+header > p {
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: rgb(231, 231, 231);
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {  /*VALE PARA AMBOS OS SECTION "NORMAL" E "IMAGEM"*/
+    padding-top: 10vh; /*ALTURA DA VIEW PORTER PARA A ROLAGEM MAIOR*/
+    padding-bottom: 10vh; /*ALTURA DA VIEW PORTER PARA A ROLAGEM MAIOR*/
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte-padrao);
+    font-size: 3.5vw; /*LARGURA DA VIEWPORTER PARA ALTERAR O TAMANHO DA FONTE (NÃO IDEAL, O MELHOR OPÇÃO SERIA "MEDIA QUERIE")*/
+}
+
+section > p {
+    padding-bottom: 4em;
+    padding-top: 4em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.664); /*box-level: inset - SOMBRA COMBRINDO A PARTE DE DENTRO, AO INVÉS DE FORA*/
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block; /*TRANSFORMA EM UMA CAIXA QUE ADAPTA AO TAMANHO DO CONTEÚDO*/
+    background-color: rgba(0, 0, 0, 0.331);
+    padding: 5px;
+    text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.669);
+}
+
+section#img01 {
+    background-image: url(img/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(img/background002.jpg);
+    background-position: left bottom;
+}
+
+section#ajuste01 {
+    padding-bottom: 15px;
+}
+
+section#ajuste02 {
+    padding-top: 0px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer > strong {
+    font-style: bold;
+}
+
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(240, 240, 240);
+}
