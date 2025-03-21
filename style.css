@@ -90,7 +90,6 @@ section.imagem {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 20%;
 }
 
 section.imagem > p {
@@ -101,8 +100,8 @@ section.imagem > p {
 }
 
 section#img01 {
-    background-image: url(img/background001.jpg);
-    background-position: right top;
+    background-image: url(img/background001-editada.jpg);
+    background-position: center top;
 }
 
 section#img02 {
