@@ -1,4 +1,4 @@
-> Curso completo e atual de HTML5 e CSS3 - Módulo 1 de 5 | Canal Curso em Vídeo (Youtube)
+> Curso completo e atual de *HTML5 e CSS3* - Módulo 1 de 5 | Canal Curso em Vídeo (Youtube)
 >
 > https://tinyurl.com/bddr6syd
 >
